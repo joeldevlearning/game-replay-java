@@ -1,7 +1,4 @@
-package com.example;
-
-import java.time.Instant;
-import java.util.ArrayList;
+package com.gamereplay.data;
 
 public abstract class GameEvent {
 

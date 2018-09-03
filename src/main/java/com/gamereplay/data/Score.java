@@ -1,6 +1,4 @@
-package com.example;
-
-import java.util.ArrayList;
+package com.gamereplay.data;
 
 public class Score extends GameEvent {
 
@@ -18,8 +16,8 @@ public class Score extends GameEvent {
     @Override
     public String toString() {
         return String.format(
-                this.scoredByNum + this.scoredByName +
-                        "scores "
-                        + this.points + "points");
+                "#" + this.scoredByNum + " " + this.scoredByName +
+                        " scores "
+                        + this.points + " points...");
     }
 }

@@ -1,13 +1,13 @@
-package com.example;
+package com.gamereplay;
 /*
 
 */
 
-import javax.naming.Name;
+import com.gamereplay.data.GameEvent;
+import com.gamereplay.data.Score;
+
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
 
 public class Game {
 
@@ -26,11 +26,9 @@ public class Game {
 
         ArrayList<GameEvent> GameLog = new ArrayList<GameEvent>();
         GameLog.add(new Score('0',"Matt",1, 2));
-        GameLog.add(new Score('0',"Joel",99, 3));
+        GameLog.add(new Score('1',"Joel",99, 3));
 
-        for (GameEvent gameEvent : GameLog) {
-            System.out.println(gameEvent);
-        }
+        for (GameEvent gameEvent : GameLog) System.out.println(gameEvent);
     }
 
     public static void replay() {

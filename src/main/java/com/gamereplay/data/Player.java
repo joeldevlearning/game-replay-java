@@ -1,4 +1,4 @@
-package com.example;
+package com.gamereplay.data;
 
 public class Player {
 
